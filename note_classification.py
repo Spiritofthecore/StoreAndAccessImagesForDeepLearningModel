@@ -56,7 +56,7 @@ note_list = ["double whole", "whole", "half", "quarter", "eighth", "sixteenth"]
 model = tf.keras.Sequential([
     tf.keras.layers.Flatten(input_shape=(45, 78)),
     tf.keras.layers.Dense(128, activation='relu'),
-    tf.keras.layers.Dense(10)
+    tf.keras.layers.Dense(6)
 ])
 
 model.compile(optimizer='adam',
